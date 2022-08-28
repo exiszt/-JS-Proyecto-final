@@ -1,0 +1,234 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Overpass', sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+body {
+  background-image: linear-gradient(to bottom, #1d1d1d, #000000);
+}
+
+.contenedor {
+  width: 90%;
+  margin: auto;
+  height: 100vh;
+}
+
+.boton {
+  background: #00bfff;
+  color: #ffffff;
+  border: 0px;
+  transition: all ease .5s;
+}
+
+.boton:hover {
+  background: #008cff;
+  cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 50px;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 3.5em;
+}
+
+h3 {
+  font-size: 3em;
+}
+
+h4, h5 {
+  font-size: 2em;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: center;
+}
+
+.cont-tarjeta {
+  min-width: 50%;
+  max-width: 800px;
+  min-height: 500px;
+  padding: 50px;
+  margin: 20px 0px;
+  background-image: linear-gradient(to bottom, #131313, #000000);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.span-titulo {
+  font-size: 1.5em;
+  font-weight: 900;
+  color: #00bfff;
+}
+
+#formNombre {
+  display: flex;
+  flex-direction: column;
+}
+
+#formNombre input {
+  font-size: 1.6em;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.cont-formulario {
+  display: none;
+}
+
+#trivia {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#trivia label {
+  font-size: 1.6em;
+}
+
+#trivia select {
+  font-size: 1.6em;
+  border: solid 1px #00bfff;
+}
+
+#trivia select option {
+  font-size: 1em;
+  background: #ffffff;
+  color: #000000;
+}
+
+#trivia input {
+  font-size: 1.6em;
+}
+
+.input-comenzar {
+  margin: 10px 0px;
+  padding: 10px 0px;
+}
+
+.config-trivia {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  justify-content: center;
+  margin: auto;
+  gap: 5px;
+  text-align: start;
+}
+
+.config-trivia select {
+  padding: 10px;
+}
+
+.config-trivia .cantidad {
+  padding: 10px;
+  border: solid 1px #00bfff;
+}
+
+.contenido {
+  display: none;
+}
+
+.alternativas {
+  margin: 10px;
+  padding: 10px;
+  font-size: 2em;
+  min-height: 50px;
+  width: 50%;
+  background: #808080;
+  color: #ffffff;
+}
+
+.alternativas:hover {
+  background: rgb(95, 95, 95);
+  color: #ffffff;
+}
+
+.reinicio{
+  margin: 10px;
+  padding: 10px;
+  font-size: 2em;
+  min-height: 50px;
+  width: 50%;
+  background: #00bfff;
+  color: #ffffff;
+}
+
+.reinicio:hover {
+  background: #008cff;
+  color: #ffffff;
+}
+
+.limpiar{
+  margin: 10px;
+  padding: 10px;
+  font-size: 2em;
+  min-height: 50px;
+  width: 50%;
+  background: #ff0000;
+  color: #ffffff;
+}
+
+.limpiar:hover {
+  background: #9c0000;
+  color: #ffffff;
+}
+
+#enunciadoPregunta {
+  font-size: 2.5em;
+  padding-bottom: 20px;
+}
+
+#tabla-usuarios {
+  width: 100%;
+}
+
+.tabla-head {
+  font-size: 2em;
+}
+
+.tabla-contenido {
+  font-size: 1.6em;
+}
+
+.boton-fin {
+  margin-top: 10px;
+}
+
+input {
+  background-image: linear-gradient(to bottom, #1d1d1d, #000000);
+}
+
+select {
+  background-image: linear-gradient(to bottom, #1d1d1d, #000000);
+}

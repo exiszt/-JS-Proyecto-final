@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;600;700,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <title>Proyecto final</title>
+</head>
+
+<body>
+
+  <section class="contenedor cont-nombre" id="contNombre">
+    <div class="seccion-nombre">
+      <div class="tarjeta">
+        <div class="cont-tarjeta">
+          <h2>TRIVIA JS<br /><span class="span-titulo">CODERHOUSE</span></h2>
+          <form action="" id="formNombre">
+            <input type="text" placeholder="Ingrese su nombre" form="siguiente-nombre" id="nombreIngresado" required />
+            <input type="submit" value="Aceptar" id="siguiente-nombre" class="boton" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contenedor cont-formulario" id="contFormulario">
+    <div class="seccion-preguntas">
+      <div class="tarjeta">
+        <div class="cont-tarjeta">
+          <h2><span class="span-titulo">CONFIGURACIÓN</span></h2>
+          <form action="" id="trivia">
+            <div class="config-trivia">
+              <label for="cantidad">Cantidad preguntas</label>
+              <input type="number" id="cantidad" min="1" class="cantidad" value="5" />
+            </div>
+            <div class="config-trivia">
+              <label for="categoria">Categoría</label>
+              <select name="" id="categoria">
+                <option value="0">Cualquiera</option>
+                <option value="9">Cultura general</option>
+                <option value="10">Literatura</option>
+                <option value="11">Películas</option>
+                <option value="12">Música</option>
+                <option value="13">Teatro</option>
+                <option value="14">Televisión</option>
+                <option value="15">Videojuegos</option>
+                <option value="16">Juegos de mesa</option>
+                <option value="17">Ciencias naturales</option>
+                <option value="18">Computación</option>
+                <option value="19">Matemáticas</option>
+                <option value="20">Mitología</option>
+                <option value="21">Deportes</option>
+                <option value="22">Geografía</option>
+                <option value="23">Historia</option>
+                <option value="24">Política</option>
+                <option value="25">Arte</option>
+                <option value="26">Celebridades</option>
+                <option value="27">Animales</option>
+                <option value="28">Autos</option>
+                <option value="29">Comics</option>
+                <option value="30">Gadgets</option>
+                <option value="31">Ánime</option>
+                <option value="32">Dibujos animados</option>
+              </select>
+            </div>
+            <div class="config-trivia">
+              <label for="dificultad">Dificultad: </label>
+              <select name="" id="dificultad">
+                <option value="0">Cualquiera</option>
+                <option value="easy">Fácil</option>
+                <option value="medium">Intermedio</option>
+                <option value="hard">Difícil</option>
+              </select>
+            </div>
+            <div class="config-trivia">
+              <label for="tipo">Tipo </label>
+              <select name="" id="tipo">
+                <option value="0">Cualquiera</option>
+                <option value="multiple">Opción múltiple</option>
+                <option value="boolean">Verdadero/Falso</option>
+              </select>
+            </div>
+            <div class="config-trivia">
+              <input type="submit" value="Comenzar" class="boton input-comenzar" />
+            </div>
+            <div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contenedor contenido" id="contenido">
+    <div class="seccion-contenido">
+      <div class="tarjeta">
+        <div class="cont-tarjeta">
+          <div class="cont" id="contPregunta">
+            <p id="enunciadoPregunta"></p>
+            <div class="question-items">
+              <button id="1" type="button" class="boton alternativas"></button>
+              <button id="2" type="button" class="boton alternativas"></button>
+              <button id="3" type="button" class="boton alternativas"></button>
+              <button id="4" type="button" class="boton alternativas"></button>
+            </div>
+            <p>
+              <span id="indicePregunta"></span> /
+              <span id="cantidadPreguntas"></span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>
